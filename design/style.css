@@ -1,0 +1,292 @@
+*{
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    max-width:1440px;
+    margin:0 auto;
+}
+
+/* ---   HEADER    --- */
+header{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:80px;
+    margin: 0 50px;
+}
+
+.logo{
+    
+    height:40px;
+}
+
+a{
+    text-decoration:none;
+}
+
+.header__fake{
+    flex-grow:3;
+    /*border:1px solid black;*/
+}
+
+nav{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    width:280px;
+    height:100%;
+    /*flex-grow:0;*/
+}
+
+.nav__link{
+    height:100%;
+    width:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.nav__link a{
+    color:black;
+}
+
+.nav__link:hover{
+    border-top:1px solid rgb(1,101,252);
+}
+
+.nav__link:hover a{
+    color:rgb(1,101,252);
+}
+
+.signUp{
+    width:140px;
+    font-weight:600;
+    color:rgb(1,101,252);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    /*flex-grow:0;*/
+}
+
+/*---       ARTICLE         ---*/
+article{
+    margin:0 50px;
+}
+
+.search{
+    height:50px;
+}
+
+#search__input, .search__gps, #search__submit{
+    height:90%;
+}
+
+.search__gps{
+    display:inline-block;
+    background:rgb(242,242,242);
+    height:48px;
+    width:50px;
+    border-top-left-radius:1em;
+    border-bottom-left-radius:1em;
+    border:none;
+    /*display:flex;
+    justify-content:center;
+    align-items:center;*/
+    position:relative;
+    bottom:13px;
+}
+
+.search__gps__icon{
+    /*display:inline-block;*/
+    vertical-align:center;
+    margin:0 auto;
+    position:relative;
+    left:20px;
+    top:10px;
+    
+}
+
+#search__input{
+    border:1px solid rgb(242,242,242);
+    padding:0px;
+    outline:none;
+    font-weight:600;
+    
+}
+
+#search__input:focus{
+    border:none;
+    outline:none;
+    border:1px solid rgb(242,242,242);
+}
+
+#search__submit{
+    background:rgb(1,101,252);
+    border:none;
+    width:135px;
+    border-top-right-radius:1em;
+    border-bottom-right-radius:1em;
+    color:white;
+    
+}
+
+.search__submit__magnifyingG{
+    display:none;
+    width:46px;
+    height:46px;
+    background:rgb(1,101,252);
+    border-radius:1em;
+    position:relative;
+    bottom:12px;
+}
+
+.fa-search{
+    position:relative;
+    top:12px;
+    left:14px;
+    color:white;
+}
+
+/* ----- FILTER ------*/
+
+.filter__filter{
+    margin-top:20px;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+
+.filterButton{
+    display:flex;
+    flex-shrink:0;
+    
+    height:50px;
+    border:2px solid rgb(212,212,212);
+    border-radius:2em;
+    margin:10px;
+
+}
+
+.filterButton p{
+    margin:16px;
+    font-weight:700;;
+    font-size:18px;
+}
+
+.filterIcon{
+    background:rgb(222,235,255);
+    width:50px;
+    height:50px;
+    border-radius:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.filterIcon i{
+    color:rgb(1,101,252);
+}
+
+/*information */
+
+.filter__information__icon{
+    height:25px;
+    width:25px;
+    border:1px solid rgb(216,216,216);
+    border-radius:100%;
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.filter__information__icon i{
+    color:rgb(1,101,252);
+}
+
+.filter__information p{
+    display:inline-block;
+    margin-left:12px;
+}
+
+
+
+
+
+
+@media (max-width:768px){
+    header{
+        margin:20px;
+        
+    }
+    #search__submit{
+        display:none;
+    }
+
+    .search__submit__magnifyingG{
+        display:inline-block;
+    }
+}
+
+
+
+@media (max-width:414px){
+    .nav{
+        align-self:flex-end;
+    }
+    header{
+        flex-wrap:wrap;
+        height:130px;
+        margin:0 0 30px 0;
+        
+    }
+    .logo{
+        margin-top:20px;
+        margin-left:20px;
+    }
+    .header__fake{
+        /*min-width:20%;*/
+        flex-shrink:3;
+        /*display:none;*/
+    }
+    nav{
+        order:2;
+        flex-grow:2;
+        height:90px;
+    }
+
+    /*links*/
+
+    .nav__link{
+        height:50px;
+        border-bottom:3px solid rgb(241,241,241);
+
+    }
+    .nav__link a{
+        border-bottom:none;
+    }
+    
+    .nav__link:hover{
+        border-bottom:3px solid rgb(1,101,252);
+        border-top:none;
+    }
+    
+    .nav__link:hover a{
+        color:rgb(1,101,252);
+    }
+
+    /*-----*/
+
+    .signUp{
+        margin-top:20px;
+        
+    }
+    .signUp p{
+        text-align:right;
+    }
+
+    article{
+        margin:0 20px;
+    }
+
+    
