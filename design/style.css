@@ -69,9 +69,12 @@ nav{
     /*flex-grow:0;*/
 }
 
-/*---       ARTICLE         ---*/
-article{
+/*---       ASIDE         ---*/
+aside{
     margin:0 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
 }
 
 .search{
@@ -214,7 +217,226 @@ article{
 
 
 
-@media (max-width:768px){
+
+
+
+/* --- ARTICLE --- */
+
+article{
+    width:93%;
+    max-width:1340px;
+    margin:0 auto;
+    display:flex;
+    justify-content:space-between;
+    
+}
+
+/*---   Hebergement ---*/
+#hebergements{
+    width:60%;
+}
+
+
+.picturesBigContainer{
+    display:inline-block;
+    background:rgb(242,242,242);
+    padding:40px 3%;
+    border-radius:1em;
+}
+
+.picturesBigContainer h3{
+    margin-top:0px;
+}
+
+.picturesContainer{
+    /*width:90%;*/
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    align-content:space-between;
+    
+}
+
+.sticker{
+    background:white;
+    border-radius:1em;
+    margin-bottom:30px;
+}
+
+.topSide{
+    width:245px;
+    height:200px;
+}
+
+.topSide img{
+    width:235px;
+    height:115px;
+    border-top-left-radius:1em;
+    border-top-right-radius:1em;
+    margin:5px 5px;
+}
+
+.topSide__info{
+    margin-left:16px;
+}
+
+.topSide__info h5{
+    margin:5px;
+    font-size:16px;
+
+}
+
+.topSide__info p{
+    margin:5px;
+    font-size:13px;
+}
+
+/*---*/
+.leftSide{
+    width:354px;
+    height:145px;
+}
+.leftSide img{
+    width:125px;
+    height:135px;
+    border-top-left-radius:1em;
+    border-bottom-left-radius:1em;
+    margin:5px 5px;
+    display:inline-block;
+}
+
+.leftSide__info{
+    display:inline-block;
+    position:relative;
+    top:-10px;
+}
+.leftSide__info h5{
+    margin:5px;
+    font-size:16px;
+    display:block;
+    width:140px;
+}
+.leftSide__info p{
+    margin:5px 0 45px 5px;
+    font-size:13px;
+}
+
+
+
+
+.fa-star{
+    display:inline-block;
+    width:11px;
+    height:11px;
+    transform:scale(0.8);
+    color:rgb(1,101,252);
+}
+
+.fa-star.grey{
+    color:rgb(217,217,217);
+}
+
+/* -------populaire ----*/
+
+#populaire{
+    width:350px;
+    /*margin-left:3%;*/
+    overflow:hidden;
+}
+
+.populaire__title{
+    display:flex;
+    justify-content:space-between;
+}
+
+/* -------- activité -----*/
+
+.activite{
+   
+    margin-top:60px;
+    height:490px;
+    display:block;
+}
+
+.activite__title{
+    width:100%;
+}
+
+.activite__flex{
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    width:100%;
+    height:445px;
+}
+
+.activite__flex__sticker{
+    border-radius:1em;
+    max-width:22%;
+    max-height:450px;
+    box-shadow:6px 6px 10px #F0F0F0;
+    display:flex;
+    flex-direction:column;
+    align-content:stretch;
+}
+
+.activite__flex__sticker__img{
+    width:100%;
+    height:87%;
+    border-top-left-radius:1em;
+    border-top-right-radius:1em;
+    object-fit:cover;
+}
+
+.activite__flex__sticker text{
+    height:60px;
+}
+
+.port , .calanques{
+    height:445px;
+}
+.ile{
+    height:165px;
+}
+
+.dame{
+    height:195px;
+}
+
+.fort{
+    height:235px;
+}
+
+.longchamp{
+    height:210px;
+}
+
+
+
+/* ---- Footer ----- */
+
+footer{
+    display:flex;
+    padding:0px 50px;
+    margin-top:60px;
+    background:#F2F2F2;
+    height:217px;
+}
+
+.footer__content{
+    width:33%;
+    margin-top:50px;
+}
+
+.footer__content__points{
+    font-size:14px;
+}
+
+
+/*-----MediaQueries ------*/
+
+@media (max-device-width:768px){
     header{
         margin:20px;
         
@@ -230,7 +452,7 @@ article{
 
 
 
-@media (max-width:414px){
+@media (max-width:500px){
     .nav{
         align-self:flex-end;
     }
@@ -285,8 +507,8 @@ article{
         text-align:right;
     }
 
-    article{
+    aside{
         margin:0 20px;
     }
 
-    
+}
