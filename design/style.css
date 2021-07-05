@@ -4,6 +4,7 @@
 
 body{
     max-width:1440px;
+    min-width:375px;
     margin:0 auto;
 }
 
@@ -163,12 +164,16 @@ aside{
 .filterButton{
     display:flex;
     flex-shrink:0;
-    
     height:50px;
     border:2px solid rgb(212,212,212);
     border-radius:2em;
     margin:10px;
+    transition:all 0.3s ease-in-out;
+}
 
+.filterButton:hover{
+    background:rgb(222, 235, 255);
+    transform:scale(1.05);
 }
 
 .filterButton p{
@@ -234,11 +239,12 @@ article{
 /*---   Hebergement ---*/
 #hebergements{
     width:60%;
+    margin-right:5px;
 }
 
 
 .picturesBigContainer{
-    display:inline-block;
+    /*display:inline-block;*/
     background:rgb(242,242,242);
     padding:40px 3%;
     border-radius:1em;
@@ -261,6 +267,12 @@ article{
     background:white;
     border-radius:1em;
     margin-bottom:30px;
+    box-shadow:6px 6px 10px #E8E8E8;
+    transition:transform 0.3s ease-in ;
+}
+
+.sticker:hover{
+    transform:scale(1.05);
 }
 
 .topSide{
@@ -379,6 +391,11 @@ article{
     display:flex;
     flex-direction:column;
     align-content:stretch;
+    transition:transform 0.3s ease-in-out;
+}
+
+.activite__flex__sticker:hover{
+    transform:scale(1.05);
 }
 
 .activite__flex__sticker__img{
@@ -436,6 +453,25 @@ footer{
 
 /*-----MediaQueries ------*/
 
+@media (max-width:1000px){
+    article[class="articleTop"]{
+        flex-direction:column;
+    }
+    #hebergements{
+        order:2;
+        width:95%;
+        margin-right:0px;
+    }
+    #populaire{
+        order:1;
+        width:95%;
+    }
+    .picturesBigContainer{
+        margin-bottom:10px;
+    }
+}
+
+
 @media (max-device-width:768px){
     header{
         margin:20px;
@@ -444,12 +480,61 @@ footer{
     #search__submit{
         display:none;
     }
-
     .search__submit__magnifyingG{
         display:inline-block;
     }
 }
 
+@media (max-width:650px){
+    .filter__filter h3{
+        width:100%;
+    }
+    .topSide{
+        width:335px;
+    }
+
+    .topSide img{
+        width:335px;
+        object-fit: cover;
+    }
+
+    .leftSide{
+        width:335px;
+    }
+
+    .activite{
+        height:auto;
+    }
+    
+    .activite__flex{
+        height:auto;
+        align-items:center;
+    }
+
+    .port,.fort,.ile,.calanques,.dame,.longchamp{
+        height:190px;
+        
+    }
+    .activite__flex__sticker{
+        width:335px; 
+        max-width:95%;
+        margin-bottom:20px;
+    }
+    
+
+    footer{
+        flex-direction:column;
+        height:auto;
+        margin-top:40px;
+        padding:0px;
+    }
+    .footer__content{
+        width:335px;
+        margin : 0 auto;
+        
+    }
+
+}
 
 
 @media (max-width:500px){
