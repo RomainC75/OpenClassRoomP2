@@ -334,7 +334,7 @@ article{
 }
 
 
-
+/*--------STARS -----*/
 
 .fa-star{
     display:inline-block;
@@ -401,33 +401,62 @@ article{
 
 .activite__flex__sticker__img{
     width:100%;
-    height:87%;
+    /*height:87%;*/
     border-top-left-radius:1em;
     border-top-right-radius:1em;
     object-fit:cover;
 }
 
-.activite__flex__sticker text{
-    height:60px;
+.activite__flex__sticker__text{
+    height:51px;
 }
+
+.activite__flex__sticker__text p{
+    font-weight:600;
+    margin-left:10px;
+    
+}
+
+
 
 .port , .calanques{
     height:445px;
 }
+
+.port img , .calanques img{
+    height:390px;
+}
+
 .ile{
     height:165px;
+}
+
+.ile img{
+    height:109px;
 }
 
 .dame{
     height:195px;
 }
 
+.dame img{
+    height:140px;
+}
+
 .fort{
     height:235px;
 }
 
+.fort img{
+    height:180px;
+}
+
 .longchamp{
     height:210px;
+}
+
+.longchamp img{
+    height:153px;
 }
 
 
@@ -504,7 +533,7 @@ footer{
     }
 
     .topSide img{
-        width:335px;
+        width:325px;
         object-fit: cover;
     }
 
@@ -523,14 +552,19 @@ footer{
 
     }
 
-    .port,.fort,.ile,.calanques,.dame,.longchamp{
-        height:190px;
-        
+    .port img,.fort img ,.ile img ,.calanques img ,.dame img ,.longchamp img{
+        height:130px;
     }
+
+    .activite__flex__sticker__img{
+        height:135px;
+    }
+
     .activite__flex__sticker{
         width:335px; 
         max-width:95%;
         margin-bottom:20px;
+        height:190px;
     }
     
 
@@ -540,12 +574,11 @@ footer{
         margin-top:40px;
         padding:0px;
     }
+
     .footer__content{
         width:335px;
         margin : 0 auto;
-        
     }
-
 }
 
 
