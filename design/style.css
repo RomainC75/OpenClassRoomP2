@@ -519,6 +519,8 @@ footer{
     .activite__flex{
         height:auto;
         align-items:center;
+        align-content:normal;
+
     }
 
     .port,.fort,.ile,.calanques,.dame,.longchamp{
