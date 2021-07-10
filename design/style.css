@@ -80,6 +80,7 @@ aside{
 
 .search{
     height:50px;
+    
 }
 
 #search__input, .search__gps, #search__submit{
@@ -98,7 +99,7 @@ aside{
     justify-content:center;
     align-items:center;*/
     position:relative;
-    bottom:13px;
+    bottom:15px;
 }
 
 .search__gps__icon{
@@ -113,9 +114,12 @@ aside{
 
 #search__input{
     border:1px solid rgb(242,242,242);
+    width:235px;
     padding:0px;
     outline:none;
-    font-weight:600;
+    font-weight:700;
+    font-size:16px;
+    
     
 }
 
@@ -132,6 +136,7 @@ aside{
     border-top-right-radius:1em;
     border-bottom-right-radius:1em;
     color:white;
+    font-size:16px;
     
 }
 
@@ -143,6 +148,9 @@ aside{
     border-radius:1em;
     position:relative;
     bottom:12px;
+    position:relative;
+    left:-12px;
+    top:-14px;
 }
 
 .fa-search{
@@ -197,6 +205,11 @@ aside{
 }
 
 /*information */
+
+.filter__information{
+    display:flex;
+    align-items:center;
+}
 
 .filter__information__icon{
     height:25px;
@@ -414,6 +427,10 @@ article{
 .activite__flex__sticker__text p{
     font-weight:600;
     margin-left:10px;
+    /*
+    text-align:center;
+    vertical-align:middle;
+    */
     
 }
 
@@ -640,5 +657,23 @@ footer{
     aside{
         margin:0 20px;
     }
+
+    /*----Filtres----*/
+
+    .filterButton{
+        margin-right:7px;
+        margin-left:0px;
+    }
+
+    .filterButton p{
+        margin-left:12px;
+        font-size:16px;
+    }
+
+    .filter__information p{
+        width:290px;
+        font-size:15px;
+    }
+
 
 }
