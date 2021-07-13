@@ -9,6 +9,7 @@ body{
 }
 
 /* ---   HEADER    --- */
+
 header{
     display:flex;
     justify-content:center;
@@ -180,7 +181,7 @@ aside{
 }
 
 .filterButton:hover{
-    background:rgb(222, 235, 255);
+    background:rgb(246, 250, 255);
     transform:scale(1.05);
 }
 
@@ -198,6 +199,11 @@ aside{
     display:flex;
     justify-content:center;
     align-items:center;
+    transition:all 0.3s ease-in-out;
+}
+
+.filterButton:hover .filterIcon{
+    background:rgb(197, 220, 255);
 }
 
 .filterIcon i{
@@ -231,16 +237,9 @@ aside{
 }
 
 
-
-
-
-
-
-
-
 /* --- ARTICLE --- */
 
-article{
+.articleTop, .articleBottom{
     width:93%;
     max-width:1340px;
     margin:0 auto;
@@ -249,7 +248,7 @@ article{
     
 }
 
-/*---   Hebergement ---*/
+/*---   HEBERGEMENT ---*/
 #hebergements{
     width:60%;
     margin-right:5px;
@@ -316,7 +315,8 @@ article{
     font-size:13px;
 }
 
-/*---*/
+/*---LEFTSIDE----*/
+
 .leftSide{
     width:354px;
     height:145px;
@@ -377,7 +377,6 @@ article{
 /* -------- activité -----*/
 
 .activite{
-   
     margin-top:60px;
     height:490px;
     display:block;
@@ -431,10 +430,9 @@ article{
     text-align:center;
     vertical-align:middle;
     */
-    
 }
 
-
+/*-----ACTIVITE section Cards ------*/
 
 .port , .calanques{
     height:445px;
@@ -507,7 +505,7 @@ footer{
 }
 
 @media (max-width:1000px){
-    article[class="articleTop"]{
+    .articleTop{
         flex-direction:column;
     }
     #hebergements{
@@ -674,6 +672,4 @@ footer{
         width:290px;
         font-size:15px;
     }
-
-
 }
