@@ -25,6 +25,7 @@ header{
 
 a{
     text-decoration:none;
+    color:black;
 }
 
 .header__fake{
@@ -69,6 +70,17 @@ nav{
     justify-content:center;
     align-items:center;
     /*flex-grow:0;*/
+}
+
+h1{
+    /*margin:18.72px 50px;*/
+    margin:38.72px 50px 18.72px 50px;
+    font-size:18.72px;
+}
+
+h2{
+    font-size:18.72px;
+    margin:0 0 18.72px 0;
 }
 
 /*---       ASIDE         ---*/
@@ -163,10 +175,19 @@ aside{
 
 /* ----- FILTER ------*/
 
+.filter p:nth-child(1){
+    margin-top:0;
+}
+
 .filter__filter{
     margin-top:20px;
     display:flex;
     flex-wrap:wrap;
+}
+
+.filter__filter h2{
+    margin: 18.72px 0;
+    font-size:18.72px;
 }
 
 
@@ -308,7 +329,7 @@ aside{
     margin-left:16px;
 }
 
-.topSide__info h5{
+.topSide__info h3{
     margin:5px;
     font-size:16px;
 
@@ -340,7 +361,7 @@ aside{
     position:relative;
     top:-10px;
 }
-.leftSide__info h5{
+.leftSide__info h3{
     margin:5px;
     font-size:16px;
     display:block;
@@ -391,6 +412,10 @@ aside{
     width:100%;
 }
 
+.activite__title h2{
+    margin-top:18.72px;
+}
+
 .activite__flex{
     display:flex;
     flex-direction:column;
@@ -400,6 +425,8 @@ aside{
     width:100%;
     height:445px;
 }
+
+
 
 .activite__flex__sticker{
     border-radius:1em;
@@ -495,6 +522,12 @@ footer{
     margin-top:50px;
 }
 
+.footer__content h3{
+    margin : 21.28px 0;
+    font-size:16px;
+    font-weight:700;
+}
+
 .footer__content__points{
     font-size:14px;
 }
@@ -544,7 +577,7 @@ footer{
 }
 
 @media (max-width:650px){
-    .filter__filter h3{
+    .filter__filter h2{
         width:100%;
     }
     .topSide{
@@ -655,9 +688,14 @@ footer{
         text-align:right;
     }
 
+    h1 {
+        margin:38.72px 20px 18.72px 20px;
+    }
+
     aside{
         margin:0 20px;
     }
+
 
     /*----Filtres----*/
 
@@ -675,4 +713,14 @@ footer{
         width:290px;
         font-size:15px;
     }
+
+    #hebergements{
+        background:white;
+        padding-bottom:0px;
+    }
+
+    #hebergements h4{
+        margin-bottom:0px;
+    }
+
 }
